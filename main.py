@@ -28,10 +28,10 @@ laser_surf = pygame.image.load(join('images', 'laser.png')).convert_alpha()
 font = pygame.font.Font(join('images', 'Oxanium-Bold.ttf'), 40)
 explosion_frames = [pygame.image.load(join('images', 'explosion', f'{i}.png')).convert_alpha() for i in range(21)]
 
-laser_sound = pygame.mixer.Sound(join('audio', 'laser.wav'))
+laser_sound = pygame.mixer.Sound(join('audio', 'laser.ogg'))
 laser_sound.set_volume(0.5)
-explosion_sound = pygame.mixer.Sound(join('audio', 'explosion.wav'))
-game_music = pygame.mixer.Sound(join('audio', 'game_music.wav'))
+explosion_sound = pygame.mixer.Sound(join('audio', 'explosion.ogg'))
+game_music = pygame.mixer.Sound(join('audio', 'game_music.ogg'))
 game_music.set_volume(0.4)
 
 class Player(pygame.sprite.Sprite):
